@@ -91,6 +91,99 @@ header {
     opacity: 0.7;
 }
 
+.s2_container {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s2_info {
+    font-family: "Montserrat", sans-serif;
+    width: 500px;
+    position: absolute;
+    margin-top: 150px;
+}
+
+.s2_info button {
+    margin-top: 20px;
+    position: absolute;
+}
+
+.s2_title {
+    color: white;
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.s2_text {
+    margin-top: 30px;
+    font-weight: 200;
+    color: white;
+    opacity: .85;
+}
+
+.button button {
+    border: none;
+    border-radius: 35px;
+    height: 60px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: bold;
+    background: linear-gradient(13deg, #6c00ff, #9842ff);
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 30px 70px 0 rgb(116 22 255 / 30%), 0 12px 20px 0 rgb(128 41 255 / 62%);
+    background-position: 0 50%;
+    transition: all, .9s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.button button:hover {
+    background: linear-gradient(257deg, #6c00ff, #9842ff);
+    background-position: 100% 50%;
+}
+
+.button ::before {
+    content: "";
+    background: linear-gradient(257deg, #6c00ff, #9842ff);
+}
+
 .s3 {
     width: 500px;
     margin-left: 140px;
