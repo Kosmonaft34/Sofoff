@@ -188,7 +188,7 @@ header {
     position: absolute;
     display: inline-block;
     transform: rotate(-30deg);
-    margin-left: 887px;
+    margin-left: 611px;
     font-weight: 700;
 }
 
@@ -285,7 +285,7 @@ header {
 .s7_container {
     background-image: url("/pageishodniki/s14-bg.jpg");
     background-repeat: no-repeat;
-    width: 1577px;
+    width: 100%;
     height: 500px;
     margin: auto;
     background-size: contain;
@@ -294,10 +294,10 @@ header {
 .s7_text {
     color: white;
     font-family: "Montserrat";
-    font-size: 50px;
-    font-weight: 800;
-    padding-top: 100px;
-    padding-left: 935px;
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 70px;
+    padding-left: 639px;
 }
 
 .video video {}
@@ -311,6 +311,55 @@ header {
     line-height: 43px;
     margin-bottom: 40px;
     text-align: center;
+}
+
+.s3_container {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+}
+
+.s3_container_border {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 1px 10px rgb(0 0 0 / 50%);
+    ;
+}
+
+.s3_list {
+    width: 390px;
+}
+
+.s3_author {
+    display: flex;
+}
+
+.s3_author_img {}
+
+.s3_author_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 20px;
+}
+
+.s3_author_name {}
+
+.s3_author_name_text {
+    opacity: .5;
+}
+
+.s3_list img {
+    width: inherit;
+    margin-top: 10px;
+}
+
+.s3_author_text {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    opacity: 0.5;
+    line-height: 21px;
 }
 
 
