@@ -23,6 +23,7 @@
         display: flex;
         padding-top: 20px;
         justify-content: space-between;
+        text-decoration: none;
     }
     
     .header_container_panel {
@@ -33,15 +34,18 @@
     
     .header_container_panel a {
         color: black;
+        text-decoration: none;
     }
     
     .header_container_panel_a {
         display: flex;
         flex-direction: column;
+        font-size: 20px;
     }
     
-    .header_container_panel_a {
-        font-size: xx-large;
+    .header_container_panel_a a {
+        text-decoration: none;
+        color: rgb(122, 106, 214);
     }
     
     .header_container_panel_m a>img {
@@ -49,7 +53,7 @@
     }
     
     .hc_span2 {
-        font-size: initial;
+        font-size: 10px;
     }
     
     .hc_1 {
@@ -60,10 +64,19 @@
         margin-left: 30px;
     }
     
+    .hc_panel_m_flex {
+        display: flex;
+        width: 100px;
+        justify-content: space-between
+    }
+    
     .header_container_panel_m {
-        margin-right: -205px;
         display: flex;
         align-items: center;
+    }
+    
+    .header_container_panel_m img {
+        width: 30px;
     }
     
     .s1 {
@@ -71,7 +84,7 @@
         margin-right: 140px;
         width: 600px;
         margin-top: 100px;
-        font-size: 20px;
+        font-size: 18px;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: revert;
     }
@@ -85,6 +98,18 @@
         line-height: 24px;
         margin-bottom: 30px;
         opacity: 0.7;
+    }
+    
+    .button_1 {
+        width: 400px;
+        margin-left: 140px;
+    }
+    
+    #button1 {
+        width: 100%;
+        font-size: 14px;
+        animation-name: gradient;
+        animation-delay: .5s;
     }
     
     .s2_container {
@@ -119,6 +144,7 @@
     }
     
     .animation button {
+        color: white;
         border: none;
         border-radius: 35px;
         height: 60px;
@@ -142,32 +168,30 @@
         -webkit-animation-fill-mode: both;
         animation-duration: 2s;
         animation-fill-mode: both;
-        -webkit-animation-duration: 0.5s;
+        -webkit-animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         opacity: 0;
         animation-name: fadeInUp;
         -webkit-animation-name: fadeInUp;
     }
     
-    .an1 {
-        animation-delay: 0.7s;
-        -webkit-animation-duration: 1s;
-        animation-duration: 2s;
-        -webkit-animation-duration: 0.5s;
-    }
+    .an1 {}
     
     .an2 {
-        animation-delay: 0.8s;
-        -webkit-animation-duration: 1s;
-        animation-duration: 2s;
-        -webkit-animation-duration: 0.5s;
+        animation-delay: 0.7s;
+        /* -webkit-animation-duration: 0.8s; */
+        /* animation-duration: .8s; */
     }
     
     .an3 {
+        animation-delay: 0.8s;
+        /* -webkit-animation-duration: 0.7s; */
+        /* animation-duration: .; */
+    }
+    
+    .an4 {
         animation-delay: 1s;
-        -webkit-animation-duration: 1s;
-        animation-duration: 2s;
-        -webkit-animation-duration: 0.5s;
+        /* -webkit-animation-duration: 0.2s; */
     }
     
     @keyframes fadeInUp {
@@ -192,13 +216,14 @@
     
     @keyframes gradient {
         0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
         }
         100% {
-            background-position: 0% 50%;
+            opacity: 1;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
         }
     }
     
@@ -217,11 +242,14 @@
         margin-left: 140px;
         text-align: center;
         margin-right: 140px;
-        font-size: xxx-large;
-        margin-top: 280px;
+        font-size: 35px;
         line-height: normal;
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
+    }
+    
+    .s4_image img {
+        height: 55px;
     }
     
     .s4_list {
@@ -253,17 +281,18 @@
     
     .s4_content {
         margin-top: 20px;
-        font-size: 19px;
+        font-size: 14px;
         line-height: 23px;
         font-weight: 400;
         opacity: .5;
+        height: 250px;
     }
     
     .s4_meta {
         font-family: 'Montserrat', sans-serif;
         opacity: .7;
         margin-top: 20px;
-        font-size: 19px;
+        font-size: 15px;
     }
     
     .s5_container {
@@ -291,7 +320,7 @@
         margin-top: 27px;
         position: absolute;
         display: inline-block;
-        margin-left: 200px;
+        margin-left: 150px;
         font-weight: 700;
     }
     
@@ -344,8 +373,8 @@
         background-image: url(/pageishodniki/s6-item-1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         color: rgba(0, 0, 0, 0.5);
     }
     
@@ -357,8 +386,8 @@
         background-image: url("pageishodniki/s6-item-2.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         color: rgba(0, 0, 0, 0.5)
     }
     
@@ -370,8 +399,8 @@
         background-image: url("pageishodniki/s6-item-3.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         color: rgba(0, 0, 0, 0.5)
     }
     
@@ -383,8 +412,8 @@
         background-image: url("pageishodniki/s6-item-4.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
         color: rgba(0, 0, 0, 0.5)
     }
     
@@ -410,10 +439,6 @@
         padding-top: 70px;
         padding-left: 639px;
     }
-    
-    .video video {}
-    
-    .s2_info {}
     
     .section3 p {
         font-family: "Montserrat", sans-serif;
@@ -471,5 +496,57 @@
         font-family: "Montserrat", sans-serif;
         opacity: 0.5;
         line-height: 21px;
+    }
+    
+    .section4 {
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    .wrapper2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .s3_info {
+        position: absolute;
+        margin-right: 150px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 900;
+        font-size: 33px;
+        line-height: 43px;
+    }
+    
+    .section3_title {
+        color: black;
+    }
+    
+    .gradient {
+        animation-name: gradient;
+    }
+    
+    .section5 {
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    .basement {
+        display: flex;
+    }
+    
+    .basement a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+    .sber {
+        margin-top: 20px;
+        margin-left: 10px;
     }
     /* } */
